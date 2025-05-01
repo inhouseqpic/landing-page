@@ -1,0 +1,230 @@
+/* Main Layout */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 42px;
+  width: auto;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+.phone-button {
+  background-color: #4285f4;
+  color: white;
+}
+
+.phone-button:hover {
+  background-color: #3367d6;
+}
+
+.phone-icon,
+.whatsapp-icon {
+  font-size: 1.1rem;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Elements */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.country-code {
+  background: #f5f5f5;
+  padding: 0.65rem;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.9rem;
+}
+
+.phone-input input {
+  border-radius: 0 6px 6px 0;
+}
+
+.selection-section {
+  margin: 0.5rem 0;
+}
+
+.selection-section label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.button-group button {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.85rem;
+  border: 1px solid #d32f2f;
+  border-radius: 16px;
+  background: transparent;
+  color: #d32f2f;
+  cursor: pointer;
+}
+
+.button-group button.selected {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.selected-countries {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  background: #ffebee;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.terms {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.submit-button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+  
+  .logo-image {
+    height: 36px;
+  }
+  
+  .contact-button {
+    padding: 0.6rem;
+    border-radius: 50%;
+  }
+  
+  .contact-button span {
+    display: none;
+  }
+  
+  .form-container {
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  input {
+    padding: 0.6rem;
+  }
+  
+  .button-group button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tall mobile devices */
+@media (max-height: 700px) and (max-width: 768px) {
+  .navbar {
+    padding: 0.6rem;
+  }
+  
+  .logo-image {
+    height: 32px;
+  }
+  
+  .form-container {
+    padding: 0.8rem;
+  }
+  
+  .selection-section {
+    margin: 0.3rem 0;
+  }
+}
