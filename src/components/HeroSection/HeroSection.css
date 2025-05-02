@@ -38,6 +38,6 @@
   /* For very small devices */
   @media (max-width: 480px) {
     .hero h1 {
-      font-size: 1.3rem;
+      font-size: 0.8rem;
     }
   }

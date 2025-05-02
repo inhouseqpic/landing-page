@@ -42,8 +42,8 @@ const FormSection = () => {
 
   const submitToGoogleSheets = (data) => {
     return new Promise((resolve) => {
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbyU2jUrzujnrU53kJC5l3BQXnu2QplQS_csTnjoylY44v3cklOagDzyjXSGv-wrxPAb-A/exec';
-
+     // const scriptUrl = 'https://script.google.com/macros/s/AKfycbyU2jUrzujnrU53kJC5l3BQXnu2QplQS_csTnjoylY44v3cklOagDzyjXSGv-wrxPAb-A/exec';
+      const scriptUrl =  'https://script.google.com/macros/s/AKfycbxaEF8X9Rm4jIjLsSh6ay4zEalLA54M690-6D__PqckFMVQlzzIDnJ79WfUm7ZrkBnaxg/exec';
       const urlParams = new URLSearchParams(window.location.search);
       const utmSource = urlParams.get('utm_source') || 'direct';
       const utmMedium = urlParams.get('utm_medium') || 'none';
