@@ -21,11 +21,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
+        <a href="https://skylinescholar.com/" target="_blank" rel="noopener noreferrer">
         <img 
           src={logo} 
           alt="Skyline Scholars - Study Abroad Specialists" 
           className="logo-image" 
         />
+        </a>
       </div>
       
       <div className="contact-buttons">
